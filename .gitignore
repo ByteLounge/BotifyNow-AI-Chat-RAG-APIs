@@ -1,0 +1,38 @@
+# --- Python / Backend ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.env
+.env.*
+.venv/
+venv/
+*.log
+
+# Uvicorn reload artifacts
+*.pid
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+.vite/
+*.local
+*.cache
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- IDE files ---
+.vscode/
+.idea/
+
+# --- Build Artifacts ---
+*.zip
+*.tar.gz
+*.bak
+
+# --- Environment ---
+*.env

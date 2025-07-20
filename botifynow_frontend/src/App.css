@@ -1,0 +1,144 @@
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: #f0f2f5;
+  color: #333;
+  margin: 0;
+}
+
+.app-container {
+  max-width: 480px;
+  height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #4e8cff, #0052cc);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.chat-container {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background: #f9f9fb;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble {
+  max-width: 75%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  border-radius: 14px;
+  line-height: 1.4;
+  font-size: 15px;
+  word-break: break-word;
+}
+
+.chat-bubble.user {
+  background: #4e8cff;
+  color: white;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-bubble.bot {
+  background: #e6e9f0;
+  color: #333;
+  align-self: flex-start;
+}
+
+.typing {
+  font-style: italic;
+  color: #666;
+  background: #f1f1f1;
+}
+
+.input-section {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #fdfdfd;
+}
+
+.input-section input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-section button {
+  background: #4e8cff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.input-section button:hover {
+  background: #0052cc;
+}
+
+.upload-section {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdfdfd;
+  border-top: 1px solid #ddd;
+}
+
+.upload-section input {
+  font-size: 13px;
+}
+
+.upload-section button {
+  background: #00b894;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-section button:hover {
+  background: #009f7a;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 600px) {
+  .app-container {
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .input-section input {
+    font-size: 16px;
+  }
+
+  .upload-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .upload-section input {
+    margin-bottom: 6px;
+  }
+}
