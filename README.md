@@ -169,7 +169,8 @@ Frontend will run at:
 
 ## **📸 UI Preview**
 
-*(Add screenshots here after running the frontend)*
+<img width="491" height="862" alt="Screenshot 2025-07-20 230246" src="https://github.com/user-attachments/assets/55b5e724-bcc8-4a27-8235-999b985824d4" />
+
 
 ---
 
